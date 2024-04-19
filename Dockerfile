@@ -1,4 +1,4 @@
-FROM node:alpine3.18
+FROM node:alpine3.18 as build
 
 ARG REACT_APP_NODE_ENV
 ARG REACT_APP_SERVER_BASE_URL
@@ -19,3 +19,5 @@ RUN rm -rf *
 COPY --from=build /app/build .
 EXPOSE 80
 ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
+
+
