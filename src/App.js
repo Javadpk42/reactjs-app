@@ -32,7 +32,7 @@ function App() {
           <img src="./logo_p.png" width="50" height="50" class="d-inline-block" alt="" />
           Integration Ninja
         </a> */}
-        <h3>logo</h3>
+        <h3>changed logo</h3>
       </nav>
       <div className='container'>
         <div className="row">
